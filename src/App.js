@@ -90,17 +90,9 @@ function App() {
   );
 }
 
-const useMovieInfoStyles = makeStyles({
-  root: {
-    // backgroundColor: "#f5c518",
-    // color: "#000000"
-  }
-});
-
 function MovieInfo({ movie }) {
   const classes = useMovieInfoStyles();
   const { Title, Year, Plot, Genre, imdbRating } = movie;
-  console.log(typeof parseFloat(imdbRating));
   let ratingLabel;
   if (imdbRating != "N/A") {
     ratingLabel = `${imdbRating}/10`;
