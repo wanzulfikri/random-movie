@@ -91,7 +91,6 @@ function App() {
 }
 
 function MovieInfo({ movie }) {
-  const classes = useMovieInfoStyles();
   const { Title, Year, Plot, Genre, imdbRating } = movie;
   let ratingLabel;
   if (imdbRating != "N/A") {
