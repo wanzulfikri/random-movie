@@ -1,8 +1,9 @@
 import axios from "axios";
 
-// WIP
+const apiKey = process.env.REACT_APP_OMDB_API;
+
 function fetchRandomMovie(id) {
-  const url = `http://www.omdbapi.com/?apikey=819fc38b&i=${id}`;
+  const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`;
   return axios.get(url);
 }
 

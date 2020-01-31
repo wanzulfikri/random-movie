@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     marginTop: 4
   },
   card: {
-    paddingBottom: 16
+    paddingBottom: 10
   }
 });
 
@@ -54,7 +54,7 @@ function App() {
       <Container maxWidth="xs">
         <Card>
           <MovieImage posterURL={movie.Poster} />
-          <CardContent classes={classes.card}>
+          <CardContent className={classes.card}>
             {!movie ? (
               <Typography variant="h6" align="center">
                 No movie
@@ -91,9 +91,10 @@ function App() {
 }
 
 function MovieInfo({ movie }) {
-  const { Title, Year, Plot, Genre, imdbRating } = movie;
+  const { Title, Year, Plot, Genre, imdbRating, imdbID } = movie;
+  const imdbURL = `https://www.imdb.com/title/${imdbID}/`;
   let ratingLabel;
-  if (imdbRating != "N/A") {
+  if (imdbRating !== "N/A") {
     ratingLabel = `${imdbRating}/10`;
   } else {
     ratingLabel = `${imdbRating}`;
@@ -109,7 +110,7 @@ function MovieInfo({ movie }) {
       </Typography>
       <Typography variant="body2">{Plot}</Typography>
       <CardActions>
-        <Button className={classes.root} size="small">
+        <Button target="_blank" href={imdbURL} size="small">
           IMDb
         </Button>{" "}
         <Chip size="small" label={ratingLabel} />
