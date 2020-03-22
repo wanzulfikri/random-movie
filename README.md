@@ -20,7 +20,7 @@ To view the site:
 
 ### 1) Get an oMDb API key
 
-Get a key from [oMDb API](https://www.omdbapi.com/), create an `.env` file, and add the following:
+Get a key from [oMDb](https://www.omdbapi.com/), create an `.env` file, and add the following:
 
 ```
 "REACT_APP_OMDB_API"=put-oMDb-api-key-here
