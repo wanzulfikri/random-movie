@@ -1,80 +1,59 @@
-# Project Title
+# Random Movie Fetcher
 
-One Paragraph of project description goes here
+A website that fetches a random movie's poster, title, genre, synopsis, and ImDB link and rating. 
+
+I built this to practice using Material UI. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Here's a demo: https://random-movie-five.now.sh/
 
-### Prerequisites
+## Installation and build
 
-What things you need to install the software and how to install them
+Fork (optional) and clone this repo.
+
+Install dependencies with `npm`:
+```shell 
+npm install
+```
+To view the site:
+
+### 1) Get an oMDb API key
+
+Get a key from [oMDb API](https://www.omdbapi.com/), create an `.env` file, and add the following:
 
 ```
-Give examples
+"REACT_APP_OMDB_API"=put-oMDb-api-key-here
 ```
 
-### Installing
+### 2) Start a development server or serve a production build
 
-A step by step series of examples that tell you how to get a development env running
+**Development server**
 
-Say what the step will be
-
-```
-Give the example
+```shell
+npm start
 ```
 
-And repeat
-
+**Build a production version and deploy**
+```shell
+npm run build
 ```
-until finished
-```
+And deploy accordingly.
 
-End with an example of getting some data out of the system or using it for a little demo
+With `node`, you can serve the build with:
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```shell
+npm install -g serve
+serve -s build
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
+### Built with
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+1. [React](https://reactjs.org/) - main UI library
+2. [Material-UI](https://material-ui.com/) - UI component library
+3. [npm] - npm package manager
+4. [oMDb API](https://www.omdbapi.com/) - source of movie information
 
 ## License
 
