@@ -2,7 +2,7 @@
 
 A website that fetches a random movie's poster, title, genre, synopsis, and ImDB link and rating. 
 
-I built this to practice using Material UI. 
+I built this to practise using Material UI. 
 
 ## Getting Started
 
