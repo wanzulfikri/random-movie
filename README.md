@@ -6,7 +6,7 @@ I built this to practice using Material UI.
 
 ## Getting Started
 
-Here's a demo: https://random-movie-five.now.sh/
+Here's a demo: https://random-movie-five.now.sh/ (Deployed with [Now](https://zeit.co/home))
 
 ## Installation and build
 
@@ -52,7 +52,7 @@ serve -s build
 
 1. [React](https://reactjs.org/) - main UI library
 2. [Material-UI](https://material-ui.com/) - UI component library
-3. [npm] - npm package manager
+3. [npm](https://npmjs.com/) - npm package manager
 4. [oMDb API](https://www.omdbapi.com/) - source of movie information
 
 ## License
