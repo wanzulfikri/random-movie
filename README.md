@@ -34,6 +34,8 @@ Get a key from [oMDb](https://www.omdbapi.com/), create an `.env` file, and add 
 npm start
 ```
 
+View the site with your browser at `http://localhost:3000`.
+
 **Build a production version and deploy**
 ```shell
 npm run build
